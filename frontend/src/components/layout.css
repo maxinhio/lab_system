@@ -1,0 +1,24 @@
+.app-root{display:flex;min-height:100vh}
+.sidebar{width:240px;background:var(--brand-900);color:#fff;padding:20px;box-sizing:border-box}
+.sidebar .brand{font-weight:700;margin-bottom:12px;font-size:1.1rem}
+.sidebar ul{list-style:none;padding:0;margin:0}
+.sidebar li{margin:8px 0}
+.sidebar a{color:#fff;text-decoration:none}
+.main-area{flex:1;display:flex;flex-direction:column}
+.header{height:64px;background:transparent;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid rgba(15,73,111,0.06)}
+.content{padding:20px}
+.brand{display:flex;align-items:center;gap:8px}
+.brand .logo{width:36px;height:36px;background:var(--accent);border-radius:6px}
+.sidebar .brand{display:flex;align-items:center;gap:8px}
+/* Navigation link styles */
+.nav-link{display:block;padding:10px 12px;border-radius:6px;color:rgba(255,255,255,0.92);transition:all .12s}
+.nav-link:hover{background:rgba(255,255,255,0.04);transform:translateX(4px)}
+.nav-link.active{background:linear-gradient(90deg, rgba(255,107,53,0.12), rgba(15,73,111,0.06));box-shadow: inset 3px 0 0 var(--accent);font-weight:600}
+
+/* Header tweaks */
+.header .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(180deg,var(--brand-700),var(--brand-900));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.btn-ghost{background:transparent;border:1px solid rgba(15,73,111,0.08);color:var(--brand-700)}
+.btn-ghost:hover{background:rgba(15,73,111,0.04)}
+
+/* Responsive */
+@media (max-width:720px){.sidebar{display:none}.app-root{flex-direction:column}.header{position:sticky;top:0;z-index:10}}
